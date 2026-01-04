@@ -10,14 +10,8 @@ import java.util.List;
 
 @Repository
 public interface BookingJpaRepository extends JpaRepository<BookingEntity, Long> {
-    @Query("""
-            SELECT b FROM Booking b
-            WHERE b.room.id = :roomId
-            AND (
-                 b.checkIn <= :endDate AND b.checkOut >= :startDate
-            )
-            """)
-    List<BookingEntity> findByRoomAndDateRange(@Param("roomId") String roomId,
+    @Query("SELECT b FROM BookingEntity b WHERE b.room.id = :roomId AND (b.checkIn <= :endDate AND b.checkOut >= :startDate)")
+    List<BookingEntity> findByRoomEntityAndDateRange(@Param("roomId") String roomId,
                                                @Param("startDate") String startDate,
                                                @Param("endDate") String endDate);
 }
