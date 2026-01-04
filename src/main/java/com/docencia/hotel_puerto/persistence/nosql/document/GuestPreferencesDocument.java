@@ -11,7 +11,7 @@ public class GuestPreferencesDocument {
     private String id;
     private Long guestId;
     private String roomType;
-    private String board;
+    private String boardType;
 
     public GuestPreferencesDocument() {
     }
@@ -32,7 +32,7 @@ public class GuestPreferencesDocument {
         this.id = id;
         this.guestId = guestId;
         this.roomType = roomType;
-        this.board = boardType;
+        this.boardType = boardType;
     }
 
     public String getId() {
@@ -59,12 +59,12 @@ public class GuestPreferencesDocument {
         this.roomType = roomType;
     }
 
-    public String getBoard() {
-        return board;
+    public String getBoardType() {
+        return boardType;
     }
 
-    public void setBoard(String board) {
-        this.board = board;
+    public void setBoardType(String boardType) {
+        this.boardType = boardType;
     }
 
     @Override

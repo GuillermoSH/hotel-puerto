@@ -3,7 +3,7 @@ package com.docencia.hotel_puerto.domain.model;
 import java.util.Objects;
 
 public class Room {
-    private String id;
+    private Long id;
     private String number;
     private String type;
     private Float pricePerNight;
@@ -12,11 +12,11 @@ public class Room {
     public Room() {
     }
 
-    public Room(String id) {
+    public Room(Long id) {
         this.id = id;
     }
 
-    public Room(String id, String number, String type, Float pricePerNight, Hotel hotel) {
+    public Room(Long id, String number, String type, Float pricePerNight, Hotel hotel) {
         this.id = id;
         this.number = number;
         this.type = type;
@@ -24,11 +24,11 @@ public class Room {
         this.hotel = hotel;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

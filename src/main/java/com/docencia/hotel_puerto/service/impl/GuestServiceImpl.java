@@ -8,10 +8,12 @@ import com.docencia.hotel_puerto.persistence.nosql.document.GuestPreferencesDocu
 import com.docencia.hotel_puerto.persistence.repository.jpa.GuestJpaRepository;
 import com.docencia.hotel_puerto.persistence.repository.nosql.GuestPreferencesRepository;
 import com.docencia.hotel_puerto.service.api.GuestService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 public class GuestServiceImpl implements GuestService {
     private final GuestJpaRepository guestRepository;
     private final GuestMapper guestMapper;

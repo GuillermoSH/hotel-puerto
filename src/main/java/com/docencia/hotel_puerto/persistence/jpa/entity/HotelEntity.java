@@ -11,7 +11,7 @@ import java.util.Set;
 public class HotelEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private Long id;
 
     @Column(name = "name", nullable = false)
     private String name;
@@ -25,22 +25,22 @@ public class HotelEntity {
     public HotelEntity() {
     }
 
-    public HotelEntity(String id) {
+    public HotelEntity(Long id) {
         this.id = id;
     }
 
-    public HotelEntity(String id, String name, String address, Set<RoomEntity> rooms) {
+    public HotelEntity(Long id, String name, String address, Set<RoomEntity> rooms) {
         this.id = id;
         this.name = name;
         this.address = address;
         this.rooms = rooms;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

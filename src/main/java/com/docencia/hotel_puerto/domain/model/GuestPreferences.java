@@ -6,7 +6,7 @@ public class GuestPreferences {
     private String id;
     private Long guestId;
     private String roomType;
-    private String board;
+    private String boardType;
 
     public GuestPreferences() {
     }
@@ -15,11 +15,11 @@ public class GuestPreferences {
         this.id = id;
     }
 
-    public GuestPreferences(String id, Long guestId, String roomType, String board) {
+    public GuestPreferences(String id, Long guestId, String roomType, String boardType) {
         this.id = id;
         this.guestId = guestId;
         this.roomType = roomType;
-        this.board = board;
+        this.boardType = boardType;
     }
 
     public String getId() {
@@ -46,12 +46,12 @@ public class GuestPreferences {
         this.roomType = roomType;
     }
 
-    public String getBoard() {
-        return board;
+    public String getBoardType() {
+        return boardType;
     }
 
-    public void setBoard(String board) {
-        this.board = board;
+    public void setBoardType(String boardType) {
+        this.boardType = boardType;
     }
 
     @Override

@@ -5,9 +5,11 @@ import com.docencia.hotel_puerto.mapper.jpa.HotelMapper;
 import com.docencia.hotel_puerto.persistence.jpa.entity.HotelEntity;
 import com.docencia.hotel_puerto.persistence.repository.jpa.HotelJpaRepository;
 import com.docencia.hotel_puerto.service.api.HotelService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class HotelServiceImpl implements HotelService {
     private final HotelJpaRepository hotelRepository;
     private final HotelMapper hotelMapper;

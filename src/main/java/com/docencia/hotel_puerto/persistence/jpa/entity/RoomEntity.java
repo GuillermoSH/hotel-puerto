@@ -9,7 +9,7 @@ import java.util.Objects;
 public class RoomEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private Long id;
 
     @Column(name = "number", nullable = false)
     private String number;
@@ -27,11 +27,11 @@ public class RoomEntity {
     public RoomEntity() {
     }
 
-    public RoomEntity(String id) {
+    public RoomEntity(Long id) {
         this.id = id;
     }
 
-    public RoomEntity(String id, String number, String type, Float pricePerNight, HotelEntity hotel) {
+    public RoomEntity(Long id, String number, String type, Float pricePerNight, HotelEntity hotel) {
         this.id = id;
         this.number = number;
         this.type = type;
@@ -39,11 +39,11 @@ public class RoomEntity {
         this.hotel = hotel;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

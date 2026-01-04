@@ -5,7 +5,7 @@ import java.util.Objects;
 import java.util.Set;
 
 public class Hotel {
-    private String id;
+    private Long id;
     private String name;
     private String address;
     private Set<Room> rooms = new HashSet<>();
@@ -13,22 +13,22 @@ public class Hotel {
     public Hotel() {
     }
 
-    public Hotel(String id) {
+    public Hotel(Long id) {
         this.id = id;
     }
 
-    public Hotel(String id, String name, String address, Set<Room> rooms) {
+    public Hotel(Long id, String name, String address, Set<Room> rooms) {
         this.id = id;
         this.name = name;
         this.address = address;
         this.rooms = rooms;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

@@ -5,9 +5,11 @@ import com.docencia.hotel_puerto.mapper.jpa.RoomMapper;
 import com.docencia.hotel_puerto.persistence.jpa.entity.RoomEntity;
 import com.docencia.hotel_puerto.persistence.repository.jpa.RoomJpaRepository;
 import com.docencia.hotel_puerto.service.api.RoomService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class RoomServiceImpl implements RoomService {
     private final RoomJpaRepository roomRepository;
     private final RoomMapper roomMapper;
